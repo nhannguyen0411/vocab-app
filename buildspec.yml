@@ -12,5 +12,5 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 sync out/ s3://vocab-app-frontend-352311918363-ap-southeast-1-an --delete
-      - aws cloudfront create-invalidation --distribution-id E2V7L24MBIFG8D --paths "/*"
+      - aws s3 sync out/ s3://$FRONTEND_BUCKET --delete
+      - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
