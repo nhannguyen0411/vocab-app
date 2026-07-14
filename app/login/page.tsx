@@ -64,7 +64,7 @@ function LoginContent() {
         <span className="text-sm font-medium tracking-tight">Diễn Đạt</span>
         <div className="max-w-md">
           <p className="text-3xl leading-snug font-medium tracking-tight">
-            Học một chunk, dùng được trong cả bài nói lẫn bài viết.
+            Học một chunks, dùng được trong cả bài nói lẫn bài viết.
           </p>
           <p className="mt-4 text-sm text-zinc-400">
             Luyện theo phương pháp Nhìn, Che, Nói, Mở rộng, rồi viết đoạn văn
