@@ -4,12 +4,14 @@ phases:
   install:
     runtime-versions:
       nodejs: 20
+    commands:
+      - npm install -g pnpm
   pre_build:
     commands:
-      - npm ci
+      - pnpm install --frozen-lockfile
   build:
     commands:
-      - npm run build
+      - pnpm run build
   post_build:
     commands:
       - aws s3 sync out/ s3://$FRONTEND_BUCKET --delete
